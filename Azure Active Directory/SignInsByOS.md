@@ -9,7 +9,7 @@ This query can also be used to determine with Operting Systems need to be added 
 
 ## Defender XDR
 ```KQL
-AADSignInEventsBeta
+EntraIdSignInEvents
 | where isnotempty(UserAgent)
 // Filter for successful sign ins only
 | where ErrorCode == 0
